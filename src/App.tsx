@@ -11,13 +11,6 @@ function App() {
         e criação de aplicações web. Atualmente trabalho com as técnologias{" "}
         <b>React</b>, <b>Next</b>, <b>NodeJS</b> e <b>TailWind CSS</b>.
       </p> */}
-
-      <footer>
-        <a href="http://" target="_blank" rel="noopener noreferrer"></a>
-        <a href="http://" target="_blank" rel="noopener noreferrer"></a>
-        <a href="http://" target="_blank" rel="noopener noreferrer"></a>
-        <a href="http://" target="_blank" rel="noopener noreferrer"></a>
-      </footer>
     </section>
   );
 }

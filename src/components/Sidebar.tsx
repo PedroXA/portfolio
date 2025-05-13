@@ -1,45 +1,68 @@
-const Sidebar = () => {
+import Icons from "../utils/Icons";
+
+export function Sidebar() {
   return (
-    <div className="sidebar sidebar-background">
-      <div className="sidebar__logo">
-        <img src="/logo.png" alt="Logo" />
+    // sidebar container
+    // sidebar não está responsivo ainda
+    <div className="flex flex-col w-5/5 p-5 bg-gray-900 pl-30 pr-30 h-screen">
+      <div className="flex flex-col items-center">
+        <video
+          id="logo-video"
+          autoPlay
+          muted
+          playsInline
+          loop
+          disablePictureInPicture
+          className="w-20"
+        >
+          <source src="./react-animation.webm" type="video/webm" />
+          Your browser does not support the video tag.
+        </video>
       </div>
       <div className="flex flex-col text-white font-primary">
-        <h1
-          className="bg-gradient-to-r from-lime-primary from-0% to-lime-secundary from-100% bg-clip-text text-transparent 
-          text-5xl "
-        >
+        <h1 className=" bg-clip-text text-lime-primary text-5xl text-center mt-10">
           PEDRO XAVIER
         </h1>
-        <h3 className="font-bold">DESENVOLVEDOR FRONT-END</h3>
-        <p className="font-medium">
-          Crio interfaces iterativas e atrativas para experiências web.
+        <h3 className="font-bold text-center">DESENVOLVEDOR FRONT-END</h3>
+        <p className="text-primary text-justify font-segundary">
+          Crio interfaces interativas e atrativas para experiências web.
         </p>
       </div>
-      <nav className="sidebar__nav">
+
+      {/* sidebar navigation links */}
+      {/* Na versão de PC vou utilizar estados para trocar entre os componentes */}
+      {/* Versão mobile vai ser um SPA maroto gerenciado por um hamburguer*/}
+      <nav className="text-white font-segundary text-lg mt-5">
         <ul>
           <li>
-            <a href="#home">Home</a>
+            <Icons.home className="inline-block m-0.5" />
+            <a href="#home">Inicio</a>
           </li>
           <li>
+            <Icons.stack className="inline-block m-0.5" />
             <a href="#about">Stack</a>
           </li>
           <li>
-            <a href="#services">Sobre mim</a>
+            <Icons.aboutMe className="inline-block m-0.5" />
+            <a href="#services">Projetos</a>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <Icons.contact className="inline-block m-0.5" />
+            <a href="#contact">Contato</a>
           </li>
         </ul>
       </nav>
-      <div className="sidebar__socials">
-        {/* Importar o SVG do github, linkedIN e outra rede profissional */}
-        <a href="#"></a>
-        <a href="#"></a>
+
+      {/* sidebar social media links*/}
+      <div className="sidebar__socials flex flex-row justify-center items-center gap-2 mt-auto">
+        <a href="#">
+          <Icons.linkedin className="inline-block" />
+        </a>
+        <a href="#">
+          <Icons.github className="inline-block" />
+        </a>
         <a href="#"></a>
       </div>
     </div>
   );
-};
-
-export default Sidebar;
+}

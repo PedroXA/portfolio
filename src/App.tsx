@@ -1,11 +1,22 @@
+import { useState, createContext, useContext } from "react";
+
+// Components
 import { Sidebar } from "./components/Sidebar";
-import { SobreMim } from "./components/SobreMim";
+
+// Pages
+import { SobreMim } from "./pages/SobreMim";
+import { Projetos } from "./pages/Projetos";
+import { Stack } from "./pages/Stack";
+import { Contato } from "./pages/Contato";
+import { PageProvider } from "./context/PageContext";
 
 function App() {
   return (
-    <section className="flex">
+    <section className="flex h-screen">
       <Sidebar />
-      <SobreMim />
+      <PageProvider>
+        <SobreMim />
+      </PageProvider>
     </section>
   );
 }

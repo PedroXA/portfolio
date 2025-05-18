@@ -7,7 +7,7 @@ export function SobreMim() {
   const { page, setPage } = useContext(pageContext);
 
   return (
-    <section className="flex-18/20 flex-col ml-24 pr-24 mt-8 overflow-y-auto">
+    <section className="flex-15/20 flex-col ml-24 pr-24 mt-8 overflow-y-auto">
       {/* Tittle */}
 
       <h1 className="text-4xl font-bold font-primar text-center mb-10 flex flex-row items-center justify-center">

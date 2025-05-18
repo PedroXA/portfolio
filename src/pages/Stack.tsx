@@ -6,6 +6,10 @@
 // e vou deixar o card com a logo da tecnologia
 // e o nome dela
 
-export function stack() {
-  return <section>Stack</section>;
+export function Stack() {
+  return (
+    <section className="flex-15/20 flex-col ml-24 pr-24 mt-8 overflow-y-auto">
+      Stack
+    </section>
+  );
 }

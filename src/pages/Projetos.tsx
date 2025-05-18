@@ -2,5 +2,9 @@
 // enquanto for saindo os projetos, vou fazendo um card para cada um
 
 export function Projetos() {
-  return <section></section>;
+  return (
+    <section className="flex-15/20 flex-col ml-24 pr-24 mt-8 overflow-y-auto">
+      Project Showcase
+    </section>
+  );
 }

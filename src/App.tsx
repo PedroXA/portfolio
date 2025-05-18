@@ -1,11 +1,13 @@
+// Components
 import { Sidebar } from "./components/Sidebar";
-import { SobreMim } from "./components/SobreMim";
+
+import { PageRenderer } from "./utils/PageRenderer";
 
 function App() {
   return (
-    <section className="flex">
+    <section className="flex h-screen">
       <Sidebar />
-      <SobreMim />
+      <PageRenderer />
     </section>
   );
 }

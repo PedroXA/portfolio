@@ -1,12 +1,13 @@
+import { useContext } from "react";
 import Icons from "../utils/Icons";
 import Typewriter from "typewriter-effect";
+import { pageContext } from "../context/PageContext";
 
 export function SobreMim() {
+  const { page, setPage } = useContext(pageContext);
+
   return (
-    <section
-      id="about"
-      className="flex flex-col overflow-y-auto ml-24 mr-24 mt-8"
-    >
+    <section className="flex-15/20 flex-col ml-24 pr-24 mt-8 overflow-y-auto">
       {/* Tittle */}
 
       <h1 className="text-4xl font-bold font-primar text-center mb-10 flex flex-row items-center justify-center">
@@ -57,7 +58,12 @@ export function SobreMim() {
       </p>
 
       {/* Adicionar algumas animações extras no button para deixar ele bem a cara de um dev front-end */}
-      <button className="bg-lime-primary text-gray-900 font-bold p-4 mt-5 w-2/8 rounded-4xl hover:bg-gray-900 hover:text-lime-primary transition duration-300 ease-in-out cursor-pointer flex items-center justify-center">
+      <button
+        onClick={() => {
+          setPage("SobreMim");
+        }}
+        className="bg-lime-primary text-gray-900 font-bold p-4 mt-5 w-2/8 rounded-4xl hover:bg-gray-900 hover:text-lime-primary transition duration-300 ease-in-out cursor-pointer flex items-center justify-center"
+      >
         Visualizar Curriculo
       </button>
 
@@ -72,7 +78,7 @@ export function SobreMim() {
 
       <div className="flex flex-col mt-5">
         <div
-          className="flex flex-row mt-2 bg-gray-900 p-5 rounded-lg text-white w-3/5
+          className="flex flex-row mt-2 bg-gray-900 p-5 rounded-lg text-off-white w-3/5
           ease-in-out duration-300 hover:scale-102 cursor-pointer ml-2"
         >
           <figure className="mr-5 overflow-hidden rounded-lg">
@@ -93,7 +99,28 @@ export function SobreMim() {
         </div>
 
         <div
-          className="flex flex-row mt-2 bg-gray-900 p-5 rounded-lg text-white w-3/5
+          className="flex flex-row mt-4 bg-gray-900 p-6 rounded-lg text-off-white w-3/5
+          ease-in-out duration-300 hover:scale-102 cursor-pointer ml-2"
+        >
+          <figure className="mr-5 overflow-hidden rounded-lg">
+            <img
+              src="./lagoinha-logo.png"
+              alt="logo-lagoinha"
+              className="h-24"
+            />
+          </figure>
+          <address>
+            <h1 className="font-primary">Igreja Batista da Lagoinha</h1>
+            <p className="font-segundary">Social Media</p>
+            <p className="font-segundary">jul 2024 - presente</p>
+            <p className="text-lime-primary underline">
+              Clique para saber mais...
+            </p>
+          </address>
+        </div>
+
+        <div
+          className="flex flex-row mt-4 bg-gray-900 p-6 rounded-lg text-off-white w-3/5
           ease-in-out duration-300 hover:scale-102 cursor-pointer ml-2"
         >
           <figure className="mr-5 overflow-hidden rounded-lg">

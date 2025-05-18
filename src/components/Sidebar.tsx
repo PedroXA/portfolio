@@ -1,9 +1,15 @@
 import Icons from "../utils/Icons";
+import { pageContext } from "../context/PageContext";
+import { useContext } from "react";
 
 // Sidebar component
 export function Sidebar() {
+  // Usando os botões para setar a página que eu quero renderizar e mandar para o meu pageContext
+  const { setPage } = useContext(pageContext);
+
   return (
     <div className="flex flex-col bg-gray-900 pl-5 pr-5 pt-5 h-screen w-1/4 text-off-white">
+      {/* Sidebar React Icon */}
       <div className="flex flex-col items-center">
         <video
           id="logo-video"
@@ -18,6 +24,8 @@ export function Sidebar() {
           Your browser does not support the video tag.
         </video>
       </div>
+
+      {/* Sidebar tittle */}
       <div className="flex flex-col text-off-white font-primary">
         <h1 className=" bg-clip-text text-lime-primary text-5xl text-center mt-10">
           PEDRO XAVIER
@@ -28,26 +36,41 @@ export function Sidebar() {
         </p>
       </div>
 
-      {/* sidebar navigation links */}
-      {/* Na versão de PC vou utilizar estados para trocar entre os componentes */}
-      {/* Versão mobile vai ser um SPA maroto gerenciado por um hamburguer*/}
+      {/* Sidebar navigation links */}
       <nav className="text-off-white font-segundary text-lg mt-5">
         <ul>
           <li>
             <Icons.home className="inline-block m-0.5" />
-            <a href="#home">Home</a>
+            <button
+              className="cursor-pointer"
+              onClick={() => setPage("SobreMim")}
+            >
+              Home
+            </button>
           </li>
           <li>
             <Icons.stack className="inline-block m-0.5" />
-            <a href="#habilidades">Habilidades</a>
+            <button className="cursor-pointer" onClick={() => setPage("Stack")}>
+              Stack
+            </button>
           </li>
           <li>
             <Icons.aboutMe className="inline-block m-0.5" />
-            <a href="#sobre-mim">Sobre Mim</a>
+            <button
+              className="cursor-pointer"
+              onClick={() => setPage("Projetos")}
+            >
+              Projetos
+            </button>
           </li>
           <li>
             <Icons.contact className="inline-block m-0.5" />
-            <a href="#contato">Contato</a>
+            <button
+              className="cursor-pointer"
+              onClick={() => setPage("Contato")}
+            >
+              Contato
+            </button>
           </li>
         </ul>
       </nav>

@@ -1,6 +1,6 @@
 import { useState, createContext } from "react";
 
-//Tipando o contexto (Fazendo o uso do TypeScript)
+//Tipando o contexto
 interface PageContextType {
   page: "Projetos" | "SobreMim" | "Stack" | "Contato";
   setPage: React.Dispatch<

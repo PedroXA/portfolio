@@ -8,7 +8,7 @@ export function Sidebar() {
   const { setPage } = useContext(pageContext);
 
   return (
-    <div className="flex flex-col bg-gray-900 pl-5 pr-5 pt-5 h-screen w-1/4 text-off-white">
+    <div className="flex flex-col bg-dark-blue pl-5 pr-5 pt-5 h-screen w-1/4 text-off-white">
       {/* Sidebar React Icon */}
       <div className="flex flex-col items-center">
         <video
@@ -26,18 +26,20 @@ export function Sidebar() {
       </div>
 
       {/* Sidebar tittle */}
-      <div className="flex flex-col text-off-white font-primary">
-        <h1 className=" bg-clip-text text-lime-primary text-5xl text-center mt-10">
+      <div className="flex flex-col text-off-white">
+        <h1 className="bg-clip-text text-green-neon text-5xl text-center mt-10 font-primary">
           PEDRO XAVIER
         </h1>
-        <h3 className="font-bold text-center">DESENVOLVEDOR FRONT-END</h3>
-        <p className="text-primary text-justify font-segundary">
+        <h3 className="font-bold text-light-white text-center">
+          DESENVOLVEDOR FRONT-END
+        </h3>
+        <p className="text-primary text-justify text-light-white">
           Crio interfaces interativas e atrativas para experiências web.
         </p>
       </div>
 
       {/* Sidebar navigation links */}
-      <nav className="text-off-white font-segundary text-lg mt-5">
+      <nav className="text-light-gray font-segundary text-2x2 mt-5 font-medium">
         <ul>
           <li>
             <Icons.home className="inline-block m-0.5" />

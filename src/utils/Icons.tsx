@@ -98,7 +98,7 @@ const Icons = {
       {...props}
     >
       <path
-        fill="#00CBA2"
+        fill="#00E6C3"
         d="m16 8.41l-4.5-4.5L4.41 11H6v8h3v-6h5v6h3v-8h1.59L17 9.41V6h-1zM2 12l9.5-9.5L15 6V5h3v4l3 3h-3v8h-5v-6h-3v6H5v-8z"
       />
     </svg>
@@ -112,7 +112,7 @@ const Icons = {
       {...props}
     >
       <path
-        fill="#00CBA2"
+        fill="#00E6C3"
         d="M12 4h8v6h-8zm0 17V11h8v10zm-9 0v-6h8v6zm0-7V4h8v10zm1-9v8h6V5zm9 0v4h6V5zm0 7v8h6v-8zm-9 4v4h6v-4z"
       />
     </svg>
@@ -126,7 +126,7 @@ const Icons = {
       {...props}
     >
       <path
-        fill="#00CBA2"
+        fill="#00E6C3"
         d="M2 4h8a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1h8v1h-1v11h-5.73l1.61 6h-1.04l-1.61-6H9.77l-1.61 6H7.12l1.61-6H3V5H2zm17 11V5H4v10z"
       />
     </svg>
@@ -140,7 +140,7 @@ const Icons = {
       {...props}
     >
       <path
-        fill="#00CBA2"
+        fill="#00E6C3"
         d="M5 7h3V5l2-2h3l2 2v2h3a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3v-8a3 3 0 0 1 3-3m5.41-3L9 5.41V7h5V5.41L12.59 4zM5 8a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h13a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2z"
       />
     </svg>
@@ -153,10 +153,10 @@ const Icons = {
       viewBox="0 0 32 32"
       {...props}
     >
-      <circle cx="4" cy="4" r="2" fill="#00CBA2" />
+      <circle cx="4" cy="4" r="2" fill="#00E6C3" />
       <g
         fill="none"
-        stroke="#00CBA2"
+        stroke="#00E6C3"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="4"
@@ -177,7 +177,7 @@ const Icons = {
     >
       <g
         fill="none"
-        stroke="#00CBA2"
+        stroke="#00E6C3"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="2"

@@ -2,9 +2,30 @@ import { useContext } from "react";
 import Icons from "../utils/Icons";
 import Typewriter from "typewriter-effect";
 import { pageContext } from "../context/PageContext";
-import { ExperienceCard } from "../components/Experience-card";
+import { ExperienceCard } from "../components/ExperienceCard";
 
 export function SobreMim() {
+  const experiencia = [
+    {
+      titulo: "Rede de Educação - Claretiano",
+      cargo: "Suporte Técnico - Help Desk",
+      duracao: "Out 2024 - Atualmente",
+      logo: "./public/claretiano-logo.png",
+    },
+    {
+      titulo: "Igreja Batista da Lagoinha",
+      cargo: "Social Media",
+      duracao: "Jul 2024 - Atualmente",
+      logo: "./public/lagoinha-logo.png",
+    },
+    {
+      titulo: "Colégio COTEMIG",
+      cargo: "Monitor Técnico - Helpdesk",
+      duracao: "Mai 2022 - Mai 2023",
+      logo: "./public/cotemig-logo.png",
+    },
+  ];
+
   const { page, setPage } = useContext(pageContext);
 
   return (
@@ -68,7 +89,9 @@ export function SobreMim() {
         Experiência
       </h2>
 
-      <ExperienceCard />
+      {experiencia.map((item) => {
+        return <ExperienceCard key={item.titulo} item={item} />;
+      })}
     </section>
   );
 }

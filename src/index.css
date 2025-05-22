@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 @import "tailwindcss";
 
 
@@ -7,17 +6,27 @@
   box-sizing: border-box;
 }	
 
+/* 
+| Nome             | Código HEX | Descrição                               |
+| ---------------- | ---------- | --------------------------------------- |
+| **Fundo Dark**   | `#0C1322`  | Fundo escuro elegante e sóbrio          |
+| **Verde Neon**   | `#00E6C3`  | Cor dos ícones e nome – destaque vivo   |
+| **Branco Suave** | `#F4F4F4`  | Cor do texto secundário – boa leitura   |
+| **Cinza Claro**  | `#B3BDC6`  | Complementar para textos ou ícones      |
+| **Ciano Pálido** | `#C3F9F5`  | Toque complementar, para detalhes leves |
+*/
+
 
 @theme{
   /* FONTS */
-  --font-primary: "Secular One", sans-serif;
-  --font-segundary: "Poppins", sans-serif;
+  --font-primary: "IBM Plex Sans", sans-serif;
+  --font-segundary: "IBM Plex Mono", monospace;
 
   /* COLORS */
-  --color-lime-primary: #00CBA2;
-  --color-off-white: #e0e0e0;
-  --color-lime-secundary: #006551;
-
-  --bg-sidebar-primary: #191a1d;
+  --color-dark-blue: #0C1322;
+  --color-green-neon: #00E6C3;
+  --color-light-white: #F4F4F4;
+  --color-light-gray: #B3BDC6;
+  --color-palid-cyan: #C3F9F5;
 }
 

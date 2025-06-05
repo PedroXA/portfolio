@@ -1,6 +1,7 @@
 import Icons from "../utils/Icons";
 import { pageContext } from "../context/PageContext";
 import { useContext } from "react";
+import { TypeWriterRole } from "../utils/TypeWriter";
 
 // Sidebar component
 export function Sidebar() {
@@ -8,7 +9,7 @@ export function Sidebar() {
   const { setPage } = useContext(pageContext);
 
   return (
-    <div className="flex flex-col bg-dark-blue pl-5 pr-5 pt-5 h-screen w-1/4 text-off-white">
+    <div className="flex flex-col bg-dark-blue pl-12 pr-5 pt-5 h-screen w-1/4 text-off-white">
       {/* Sidebar React Icon */}
       <div className="flex flex-col items-center">
         <video
@@ -31,7 +32,7 @@ export function Sidebar() {
           PEDRO XAVIER
         </h1>
         <h3 className="font-bold text-light-white text-center">
-          DESENVOLVEDOR FRONT-END
+          <TypeWriterRole />
         </h3>
         <p className="text-primary text-justify text-light-white">
           Crio interfaces interativas e atrativas para experiências web.

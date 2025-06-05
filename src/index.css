@@ -17,6 +17,11 @@
 */
 
 
+
+body {
+  background-color: var(--color-dark-blue);
+}
+
 @theme{
   /* FONTS */
   --font-primary: "IBM Plex Sans", sans-serif;
@@ -26,7 +31,13 @@
   --color-dark-blue: #0C1322;
   --color-green-neon: #00E6C3;
   --color-light-white: #F4F4F4;
-  --color-light-gray: #B3BDC6;
-  --color-palid-cyan: #C3F9F5;
+  --color-light-gray: #363d4b;
 }
 
+@layer utilities {
+  @property --border-angle {
+    syntax: '<angle>';
+    inherits: false;
+    initial-value: 0deg;
+  }
+}

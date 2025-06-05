@@ -10,19 +10,19 @@ export function SobreMim() {
       titulo: "Rede de Educação - Claretiano",
       cargo: "Suporte Técnico - Help Desk",
       duracao: "Out 2024 - Atualmente",
-      logo: "./public/claretiano-logo.png",
+      logo: "/claretiano-logo.png",
     },
     {
       titulo: "Igreja Batista da Lagoinha",
       cargo: "Social Media",
       duracao: "Jul 2024 - Atualmente",
-      logo: "./public/lagoinha-logo.png",
+      logo: "/lagoinha-logo.png",
     },
     {
       titulo: "Colégio COTEMIG",
       cargo: "Monitor Técnico - Helpdesk",
       duracao: "Mai 2022 - Mai 2023",
-      logo: "./public/cotemig-logo.png",
+      logo: "/cotemig-logo.png",
     },
   ];
 
@@ -30,53 +30,36 @@ export function SobreMim() {
 
   return (
     <section className="flex-15/20 flex-col ml-24 pr-24 mt-8 overflow-y-auto">
-      {/* Tittle */}
-
-      <h1 className="text-4xl font-bold font-segundary text-center mb-10 flex flex-row items-center justify-center">
-        <Typewriter
-          options={{
-            strings: ["Seja bem-vindo(a) ao meu Portfólio!", "Hello World!"],
-            autoStart: true,
-            loop: true,
-            delay: 100,
-            deleteSpeed: 30,
-          }}
-        />
-        <picture className="">
-          <source
-            src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f44b/512.webp"
-            type="image/webp"
-          />
-          <img
-            src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f44b/512.gif"
-            alt="👋"
-            width="32"
-            height="32"
-          />
-        </picture>
-      </h1>
-
       {/* About me */}
-      {/* Procurar saber como deixar isso aqui mais organizado */}
 
-      <p className=" text-justify font-primary leading-7 bg-dark-blue text-white p-5 rounded-lg">
-        Desde 2022, entrei na área da tecnologia como{" "}
-        <span className="text-green-neon font-bold">Suporte Técnico</span>,
-        venho explorando esse mundo vasto dentro do ecossistema tanto de{" "}
-        <span className="text-green-neon font-bold">UX/UI</span>, quanto de
-        <span className="text-green-neon font-bold">
-          {" "}
-          desenvolvimento Front-end
-        </span>
-        . Atualmente venho prestando servições para a Rede de Educação -
-        Claretiano, atuando como suporte para a área de{" "}
-        <span className="text-green-neon font-bold">
-          redes de computadores
-        </span>{" "}
-        e <span className="text-green-neon font-bold">help desk</span>. Quando
-        não estou na frente de um computador, eu posso estar tocando bateria,
-        caminhando ou pensando sobre alguma coisa nova que eu posso estar
-        fazendo.
+      <h1 className="font-primary text-light-white text-4xl pt-28">
+        Um pouquinho sobre mim
+      </h1>
+      <p className=" text-justify font-primary leading-7 text-gray-500">
+        <ul>
+          <li>
+            <p>
+              Quase dois anos de experiência em{" "}
+              <span className="text-green-neon font-bold">Suporte Técnico</span>{" "}
+              {/* Emoji Aqui */}
+            </p>
+          </li>
+          <li>
+            <p>
+              Tive a oportunidade de ajudar mais de{" "}
+              <span className="text-green-neon font-bold">400 alunos</span>{" "}
+              iniciando os estudos em técnologia
+              {/* Emoji Aqui */}
+            </p>
+          </li>
+          <li>
+            Ganhador do{" "}
+            <span className="text-green-neon font-bold">
+              3° Lugar do Programa COTEMIG Statups - 2021
+            </span>{" "}
+          </li>
+          <li>Curto uns games e gosto de comer coisas novas</li>
+        </ul>
       </p>
 
       <button
@@ -85,8 +68,8 @@ export function SobreMim() {
         }}
       ></button>
 
-      <h2 className="text-4xl text-dark-blue font-bold font-segundary text-start mt-5">
-        Experiência
+      <h2 className="font-primary text-light-white text-4xl">
+        A caminhada até aqui
       </h2>
 
       {experiencia.map((item) => {

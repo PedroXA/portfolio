@@ -5,8 +5,6 @@ The project is still a work in progress — features and content will be added o
 
 The purpose of this portfolio is to gather my journey as a developer in one place, including projects, experiences, and experiments. 🚀
 
----
-
 ## 🧠 Tech Stack
 
 This project is based on the [React + TypeScript + Vite](https://vitejs.dev) template, with a minimal setup including:
@@ -15,5 +13,3 @@ This project is based on the [React + TypeScript + Vite](https://vitejs.dev) tem
 - ⚡ **Vite** (lightning-fast bundler with HMR)
 - 🎨 **TailwindCSS** (utility-first styling)
 - 🔎 **ESLint** with recommended rules and optional TypeScript-aware config
-
----

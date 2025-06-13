@@ -13,4 +13,4 @@ This project is based on the [React + TypeScript + Vite](https://vitejs.dev) tem
 - ⚡ **Vite** (lightning-fast bundler with HMR)
 - 🎨 **TailwindCSS** (utility-first styling)
 - 🔎 **ESLint** with recommended rules and optional TypeScript-aware config
-](https://gitdocs1.s3.amazonaws.com/digests/pedroxa-portfolio/6131b3f4-227a-46b5-99e4-9fa9d2b25fa1.txt)
+
